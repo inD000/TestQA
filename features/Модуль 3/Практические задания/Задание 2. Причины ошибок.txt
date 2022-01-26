@@ -1,0 +1,44 @@
+1. Ошибка: https://dev.irpteam.com/tc/repository/download/IRP_RunVA/26984:id/allure-report.zip!/index.html#categories/1e8f37dd2d21a2146b915f7457ee0501/13cc68b5c02dfa5d/
+
+Тест упал из-за появления окна с ошибкой при проведении документов e1cib/list/Document.PurchaseInvoice
+"Товар без характеристик"
+Окно с ошибкой мешает перейти к элементу.
+
+2. Ошибка https://dev.irpteam.com/tc/repository/download/IRP_RunVA/26984:id/allure-report.zip!/index.html#categories/8c5846b9720e897d6db03b1b5e7af1f2/9ff298fd1a0ac2c/
+
+Ожидали, что после выполнения генерации документов Document.SalesOrder на форме FormDocumentPurchaseOrderGenerate количество строк будет равно 0, но осталось 2 строки. Возможно не все операции выполнились (но в логах не видно ошибок).
+
+3. Ошибка https://dev.irpteam.com/tc/repository/download/IRP_RunVA/26984:id/allure-report.zip!/index.html#categories/5559bd4553d00337fa76979ac7c852e1/64cf6365a2353fef/
+
+Из-за ошибки "Wrong linked row" не закрылась форма предыдущего открытого документа, в результате не смогли перейти к строке на форме списка (т.к. в данный момент открыта другая форма).
+
+4. Ошибка https://dev.irpteam.com/tc/repository/download/IRP_RunVA/26984:id/allure-report.zip!/index.html#categories/6c56f6f67d27861ad914188b77c36e33/31964347af6c0764/
+
+
+В cформированном отчете отличаются данные от ожидаемого результата (расхождения в колонках Period и Branch)
+
+
+5. Ошибка https://dev.irpteam.com/tc/repository/download/IRP_RunVA/26984:id/allure-report.zip!/index.html#categories/9475b7c3ceeb0514506143698b36d4fc/f1a04197e711e332/
+
+
+На предыдущем шаге при проведении документа Document.SalesOrder возникла ошибка (Wrong linked data......), в результате зависло окно, не позволяющее перейти к нужной кнопке "Sales invoice" button
+
+6. Ошибка https://dev.irpteam.com/tc/repository/download/IRP_RunVA/26984:id/allure-report.zip!/index.html#categories/d43abfe12935286a84347254f5c26211/1983df098cf6db8d/
+
+Не найдена строка в таблице BasisesTree c указанными полями.
+Ожидали
+
+Currency	Price	Quantity	Row presentation	Unit	Use
+TRY	        350,00	7,000	       Shirt (36/Red)	         pcs	No
+
+В таблице есть похожая, но со значением Quantity  = 5
+
+7. Ошибка https://dev.irpteam.com/tc/repository/download/IRP_RunVA/26984:id/allure-report.zip!/index.html#categories/d43abfe12935286a84347254f5c26211/483cc0bdb64b094f/
+
+Не найдена строка в таблице BasisesTree c указанными полями. (Таблица пустая).
+
+Ожидали
+
+Currency	Price	Quantity	Row presentation	Unit
+TRY	        100,00	10,000	         Dress (S/Yellow)	pcs
+
